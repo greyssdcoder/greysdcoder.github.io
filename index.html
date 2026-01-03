@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOGIN PAGE -->
+    <div class="login-container" id="loginPage">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div class="error-message" id="errorMessage">Invalid email or password!</div>
+        </form>
+    </div>
+
+    <!-- HOME PAGE -->
+    <div class="home-container" id="homePage">
+        <!-- DRAWER -->
+        <div class="drawer">
+            <div class="drawer-header">
+                <h2>Menu</h2>
+            </div>
+            <ul class="drawer-menu">
+                <li><a href="#home" class="menu-link active" data-section="home">Home</a></li>
+                <li><a href="#option1" class="menu-link" data-section="option1">My Letter</a></li>
+                <li><a href="#option2" class="menu-link" data-section="option2">Option 2</a></li>
+                <li><a href="#option3" class="menu-link" data-section="option3">Questions</a></li>
+                <li><a href="#option4" class="menu-link" data-section="option4">Option 4</a></li>
+            </ul>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="top-bar">
+                
+            </div>
+
+            <!-- HOME SECTION -->
+            <div class="content-section active" id="home">
+                <h2>Home</h2>
+                <p>Welcome back! This is your home page. You can edit the menu items and content sections to customize your website.</p>
+                <p>Use the drawer menu on the left to navigate between different sections.</p>
+            </div>
+
+            <!-- OPTION 1 SECTION -->
+            <div class="content-section" id="option1">
+                <h2>My Letter</h2>
+                <p>This is the My Letter section. Feel free to edit this content.</p>
+            </div>
+
+            <!-- OPTION 2 SECTION -->
+            <div class="content-section" id="option2">
+                <h2>Option 2</h2>
+                <p>This is the Option 2 section. Feel free to edit this content.</p>
+            </div>
+
+            <!-- OPTION 3 SECTION - QUESTIONS -->
+            <div class="content-section" id="option3">
+                <h2>Questions</h2>
+                <div class="questions-container">
+                    <div class="question-item">
+                        <h4>Question 1?</h4>
+                        <p>Edit your question here and add answers.</p>
+                    </div>
+                    <div class="question-item">
+                        <h4>Question 2?</h4>
+                        <p>Edit your question here and add answers.</p>
+                    </div>
+                    <div class="question-item">
+                        <h4>Question 3?</h4>
+                        <p>Edit your question here and add answers.</p>
+                    </div>
+                    <div class="question-item">
+                        <h4>Question 4?</h4>
+                        <p>Edit your question here and add answers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OPTION 4 SECTION -->
+            <div class="content-section" id="option4">
+                <h2>Option 4</h2>
+                <p>This is the Option 4 section. Feel free to edit this content.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="bb.js"></script>
+</body>
+</html>
