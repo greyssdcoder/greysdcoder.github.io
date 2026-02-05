@@ -1,6 +1,6 @@
 // Login Credentials
-const VALID_EMAIL = 'jazzngreys7@gmail.com';
-const VALID_PASSWORD = 'jazzlovegreys4ever';
+const VALID_EMAIL = 'ff';
+const VALID_PASSWORD = 'fgd';
 
 // Get Elements
 const loginPage = document.getElementById('loginPage');
@@ -72,4 +72,5 @@ logoutBtn.addEventListener('click', function() {
     // Reset content sections
     contentSections.forEach(section => section.classList.remove('active'));
     contentSections[0].classList.add('active');
+
 });
